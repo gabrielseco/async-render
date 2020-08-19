@@ -54,7 +54,7 @@ const App = () => {
 |       **`loading`**       |   `Boolean`       |   `none`    |
 |       **`children`**      |   `React.Node`    |   `none`    |
 |       **`timeout`**       |   `number`      |   `2000`    |
-|
+
 
 
 
