@@ -1,5 +1,4 @@
-name: Ship js trigger
-on:
+name: build
   push:
     branches:
       - master
