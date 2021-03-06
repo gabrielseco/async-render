@@ -11,12 +11,18 @@ export const AsyncRender = ({
 }): JSX.Element | null => {
   const [isRender, setRender] = React.useState(false);
   const timeoutRef = React.useRef<NodeJS.Timeout>();
-
   React.useEffect(() => {
     if (loading) {
       timeoutRef.current = setTimeout(() => {
         setRender(true);
       }, timeout);
+    }
+
+    if (!loading) {
+      setRender(false);
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current as NodeJS.Timeout);
+      }
     }
   }, [loading, timeout]);
 
