@@ -1,6 +1,6 @@
-# [1.0.0-beta.3](https://github.com/gabrielseco/async-render/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2021-03-06)
+# [1.0.0-beta.3] (March 6, 2021)
 
-
+- Async render observes the loading property so you don't have to create a conditional in your code
 
 ## 1.0.0-beta.2 (August 19, 2020) 
 
